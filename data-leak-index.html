@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Data Leak Detector</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <div class="card">
+    <div class="logo">🔎</div>
+    <h1>Data Leak Detector</h1>
+    <p>Paste any text or message below to check if it contains sensitive leaked data</p>
+
+    <textarea id="dataInput" placeholder="Paste your text here to scan for leaked data..."></textarea>
+    <button onclick="checkData()">🔍 Scan for Data Leaks</button>
+
+    <div id="result" class="result hidden"></div>
+
+    <div class="tips">
+      <h3>⚠️ Common Types of Leaked Data:</h3>
+      <ul>
+        <li>Email addresses and passwords</li>
+        <li>Credit/debit card numbers</li>
+        <li>Aadhar card and PAN card numbers</li>
+        <li>Phone numbers and bank account details</li>
+        <li>OTP and PIN numbers</li>
+      </ul>
+    </div>
+
+    <div class="footer">
+      Made by <strong>Diksha Chauhan</strong> | Cybersecurity Internship Project 🛡️
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
